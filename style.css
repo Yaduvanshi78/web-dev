@@ -1,0 +1,437 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #928dab;
+    color: #333;
+
+}
+main{
+    min-height: 80vh;
+}
+/* logo design */
+.logo:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    color: #f5c518; /* Brighter gold on hover */
+}
+
+.logo img {
+    height: 50px; /* Adjust based on your design */
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Smooth hover effect */
+}
+
+
+header {
+    background-color: #333;
+    padding: 15px;
+    max-width: 100vw;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+h1, .user_name {
+    font-family: 'Cinzel', serif;
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+
+
+
+/* Style for Login and Register Sections */
+#login, #register {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 25px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Headings */
+#login h2, #register h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+#login form, #register form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#login label, #register label {
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+
+#login input, #register input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#login input:focus, #register input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button Styling */
+#login button, #register button {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#login button:hover, #register button:hover {
+    background-color: #0056b3;
+}
+
+/* Links */
+#login p, #register p {
+    margin-top: 15px;
+}
+
+#login p a, #register p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#login p a:hover, #register p a:hover {
+    text-decoration: underline;
+}
+
+
+/* Hero Section */
+
+.main-heading {
+    background: url('library.jpg') no-repeat center center/cover;
+    height: 400px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+#hero .btn{
+   background: moccasin ;
+   height: 3rem;
+   width: 8rem;
+    box-shadow: #333;
+    border-radius: 20%;
+    border-color: moccasin;
+}
+#hero a{
+    color: red;
+    text-decoration: none;
+    padding: 2px;
+    
+}
+
+.hero-content h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #ff6347;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#categories {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#categories h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Category Cards */
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.category {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+.category img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.category h3 {
+    font-size: 1.5rem;
+    padding: 15px;
+    color: #333;
+}
+
+.category-link {
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+
+.category-link:hover {
+    background-color: #e5533e;
+}
+
+footer {
+    
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+
+
+
+
+/* Catalogue Section */
+#catalogue {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#catalogue h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Book Cards */
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.book {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book-title {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.book-author {
+    font-size: 14px;
+    color: #666;
+}
+
+.nav-button {
+    padding: 10px 15px;
+    margin: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Categories Section */
+#categories {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#categories h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Category Cards */
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.category {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    max-width: 250px;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+.category img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.category h3 {
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #333;
+}
+/* Styles for the book cards */
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the books */
+}
+
+.book {
+    width: 200px; /* Fixed width */
+    height: 320px; /* Fixed height */
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure even spacing */
+}
+
+/* Ensure images are same size */
+.book img {
+    width: 100%; /* Make image fill container */
+    height: 180px; /* Fixed height for images */
+    object-fit: cover; /* Crop instead of stretching */
+    border-radius: 4px;
+}
+
+.book-title {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+    height: 40px; /* Fixed height for title */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.book-author {
+    font-size: 12px;
+    color: #666;
+    height: 20px; /* Fixed height for author */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.book a {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.book a:hover {
+    background-color: #0056b3;
+}
+
+/* Hover effect for book cards */
+.book:hover {
+    transform: translateY(-5px);
+}
+
